@@ -34,6 +34,3 @@ Feel free to contribute to this project by:
 
 To contribute, please follow GitHub's standard pull request process.
 
-**License:**
-
-This project is licensed under the MIT License. For more information, see the LICENSE file.
