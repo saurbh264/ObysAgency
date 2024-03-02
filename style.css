@@ -1,0 +1,113 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+    color: #fff;
+}
+@font-face {
+    font-family: "plain light";
+    src: url(assets/fonts/plain-light-webfont.ttf);
+}
+@font-face {
+    font-family: "plain regular";
+    src: url(assets/fonts/plain-regular-webfont.ttf);
+}
+@font-face {
+    font-family: "silk serif";
+    src: url(assets/fonts/silkserif-lightitalic-webfont.ttf);
+}
+@font-face {
+    font-family: "silk serif regular";
+    src: url(assets/fonts/silkserif-regularitalic-webfont.ttf);
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+.loader{
+    height: 100%;
+    width: 100%;
+    background-color: #0B0B0B;
+    z-index: 400;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.wrapper{
+    position: relative;
+    background-color: #0B0B0B;
+}
+.page1{
+    height: 100vh;
+    width: 100%;
+    background-color: #151515;
+}
+.circle{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    color: white;
+    border: 1px solid #fff;
+    position:absolute;
+}
+
+.line h1{
+    font-family: "plain light";
+    text-transform: uppercase;
+    font-size: 14vh;
+    padding-left: 12rem;
+    overflow: hidden;
+}
+.line3{
+    display: flex;
+    align-items: center;
+    gap:2rem;
+}
+.line3 h2{
+    font-size: 10vh;
+    text-transform: uppercase;
+    /* animation: anime; */
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+}
+@keyframes anime {
+    0%{
+        font-family: "plain light";
+        -webkit-text-stroke: 1px #fff;
+    }
+    48%{
+        opacity: 0%;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        font-family: "silk serif";
+        -webkit-text-stroke-color: 1px #fff;
+        color: transparent;
+    }
+}
+.line1{
+    display: flex;
+    justify-content: flex-start;
+    gap:2rem;
+}
+.line1 h1{
+    padding-left: 0rem;
+}
+.line-part1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 12rem;
+} 
+.line-part1 h4{
+    font-size: 6vh;
+    font-weight: 200;
+    font-family: "silk serif"; 
+    text-align: center;
+    width: 14vh;
+}
