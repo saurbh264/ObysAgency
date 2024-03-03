@@ -1,10 +1,6 @@
 const circle=document.querySelector(".circle")
 const page1=document.querySelector(".page1")
 
-// page1.addEventListener("mousemove",(e)=>{
-//     circle.style.left=e.x+"px"
-//     circle.style.top=e.y+"px"
-// })
 var t1=gsap.timeline()
 t1.from(".loader .line h1",{
     y:60,
@@ -48,6 +44,21 @@ t1.from(".page1",{
       ease:Power4
   })
 t1.to(".loader",{
-      display:"none"
-  })
-    
+    display:"none"
+})
+t1.from(".page1 .nav .nav-items,.menu-icon",{
+  y:-100,
+  opacity:0,
+  duration:0.5,
+  stagger:0.1
+})
+t1.from(".page1 .lines h2,.page1 .lines h3",{
+  y:70,
+  opacity:0,
+  duration:0.5,
+  stagger:0.1
+})
+page1.addEventListener("mousemove",(e)=>{
+  circle.style.left=e.x+"px"
+  circle.style.top=e.y+"px"
+})
